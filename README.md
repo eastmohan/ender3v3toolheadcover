@@ -20,3 +20,4 @@ I am making this so that I can monitor my prints remotely and also use the light
 | MF-R500 Resettable Fuse   | $0.52 | [Link](https://mou.sr/47oTU4G)  |
 
 **Wiring Diagram**
+<img width="1419" height="939" alt="wiring diagram" src="https://github.com/user-attachments/assets/3c00022c-06a8-47b2-9bdc-b03a48e0e255" />
