@@ -1,3 +1,7 @@
+**3/17/2026** <br>
+**Made Wiring Diagram - 1h**
+
+
 **3/10/2026** <br>
 **Finished 3D Model - 2.3h**
 I added all of components in the ways that I want them. I will keep the USB hub directly by the USB port on the printer to save weight on the toolhead. The camera and light arm slides in and out so I can choose not to use it, and the esp32 c3 box is magnetic so I can take it off as well. None of this should interfere with motion limits of the 3D printer.
