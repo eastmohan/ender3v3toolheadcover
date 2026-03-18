@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LED Control Demo</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #111; color: white; }
+    .led { width: 30px; height: 30px; border-radius: 50%; display: inline-block; margin: 5px; background: black; }
+  </style>
+</head>
+<body>
+
+<h1>LED Demo (No ESP)</h1>
+
+<input type="color" id="colorPicker">
+<br>
+<input type="range" id="brightness" min="0" max="255" value="80">
+
+<br>
+<button onclick="setMode('solid')">Solid</button>
+<button onclick="setMode('rainbow')">Rainbow</button>
+<button onclick="setMode('off')">Off</button>
+
+<div id="leds"></div>
+
+<script>
+const NUM_LEDS = 16;
+let leds = [];
+let mode = "solid";
+let color = "#ffffff";
+let brightness = 80;
+let hue = 0;
+
+// create fake LEDs
+const container = document.getElementById("leds");
+for (let i = 0; i < NUM_LEDS; i++) {
+  let div = document.createElement("div");
+  div.className = "led";
+  container.appendChild(div);
+  leds.push(div);
+}
+
+function updateLEDs() {
+  if (mode === "off") {
+    leds.forEach(l => l.style.background = "black");
+  }
+  else if (mode === "solid") {
+    leds.forEach(l => l.style.background = color);
+  }
+}
+
+function rainbow() {
+  leds.forEach((l, i) => {
+    l.style.background = `hsl(${(hue + i*20)%360}, 100%, 50%)`;
+  });
+  hue += 2;
+}
+
+// UI
+document.getElementById("colorPicker").addEventListener("input", e => {
+  color = e.target.value;
+  mode = "solid";
+});
+
+document.getElementById("brightness").addEventListener("input", e => {
+  brightness = e.target.value;
+});
+
+function setMode(m) {
+  mode = m;
+}
+
+// loop
+setInterval(() => {
+  if (mode === "rainbow") rainbow();
+  else updateLEDs();
+}, 50);
+
+</script>
+
+</body>
+</html>
