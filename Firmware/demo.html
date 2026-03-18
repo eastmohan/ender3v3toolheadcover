@@ -30,7 +30,6 @@ let color = "#ffffff";
 let brightness = 80;
 let hue = 0;
 
-// create fake LEDs
 const container = document.getElementById("leds");
 for (let i = 0; i < NUM_LEDS; i++) {
   let div = document.createElement("div");
@@ -55,7 +54,6 @@ function rainbow() {
   hue += 2;
 }
 
-// UI
 document.getElementById("colorPicker").addEventListener("input", e => {
   color = e.target.value;
   mode = "solid";
@@ -69,7 +67,6 @@ function setMode(m) {
   mode = m;
 }
 
-// loop
 setInterval(() => {
   if (mode === "rainbow") rainbow();
   else updateLEDs();
