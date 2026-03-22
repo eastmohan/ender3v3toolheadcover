@@ -1,4 +1,5 @@
 Name,Cost,Link
+<<<<<<< HEAD
 Wire (2),$2.08 ,Link
 ESP32 C3,$2.67 ,Link
 330 Ohm Resistor,$1.15 ,Link
@@ -8,3 +9,14 @@ USB Hub,$7.99 ,Link
 LED ring (2),$1.48 ,Link
 UVC Camera,$18.99 ,Link
 MF-R500 Resettable Fuse,$0.52 ,Link
+=======
+Wire (2),$2.08,[Link](https://www.aliexpress.us/item/3256801511977665.html?spm=a2g0o.productlist.main.1.4cda69c3mKxbVX&algo_pvid=b854a56a-7f86-4140-a1b1-a30fd6ddbb2d&algo_exp_id=b854a56a-7f86-4140-a1b1-a30fd6ddbb2d-0&pdp_ext_f=%7B%22order%22%3A%228222%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%211.21%211.01%21%21%211.21%211.01%21%4021032f3717740361384072752ea376%2112000030363166035%21sea%21US%217284814403%21X%211%210%21n_tag%3A-29911%3Bd%3Ad5c99a82%3Bm03_new_user%3A-29895%3BpisId%3A5000000202563216&curPageLogUid=5f7SDBsQyIcS&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005001698292417%7C_p_origin_prod%3A)
+ESP32 C3,$2.67,Link
+330 Ohm Resistor,$1.15,Link
+Capacitors,$0.50,Link
+Magnets,$2.33,Link
+USB Hub,$7.99,Link
+LED ring (2),$1.48,Link
+UVC Camera,$18.99,Link
+MF-R500 Resettable Fuse,$0.52,Link
+>>>>>>> 0bb7b4cff5d11285f0af798ac32e32db8135be03
